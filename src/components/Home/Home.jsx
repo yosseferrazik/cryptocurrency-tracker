@@ -29,7 +29,7 @@ export default function Home() {
         <div>
           <h1>Crypto KA</h1>
           <h3>Toda la blockchain a un par de clicks</h3>
-          <a href="https://khanesska.github.io">
+          <a href="https://khanesska.github.io" target="_blank">
             Saber mas sobre el creador <MdOpenInNew />
           </a>
         </div>{" "}
