@@ -1,0 +1,14 @@
+.coin-input {
+  height: 70px;
+  width: 400px;
+  padding: 20px;
+  margin: 40px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: #e2e2e2;
+}
