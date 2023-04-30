@@ -1,0 +1,43 @@
+hr {
+  margin: 10px 0px;
+}
+h2 {
+  font-size: 95%;
+}
+.coin {
+  background-color: #f1f6f9;
+  width: 225px;
+  height: 355px;
+  border-radius: 10px;
+  border: 5px solid #394867;
+  box-shadow: 8px 8px 2px 1px #212a3e;
+  margin: 20px;
+}
+.content {
+  margin: 10px;
+}
+.img {
+  width: 50px;
+  height: 50px;
+}
+.coin:hover {
+  box-shadow: none;
+  transform: translate(8px);
+}
+
+.price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.know {
+  text-decoration: underline;
+}
