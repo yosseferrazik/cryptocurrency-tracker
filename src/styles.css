@@ -1,0 +1,110 @@
+/*////////////////////////////////////////*/
+/*////////////// GLOBAL //////////////////*/
+/*////////////////////////////////////////*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro&display=swap");
+html,
+body {
+  margin: 0;
+  color: #212a3e;
+  font-family: "Alice", serif;
+  text-rendering: optimizeLegibility;
+  background: #f1f6f9 no-repeat fixed center;
+  background-size: cover;
+}
+.main {
+  padding: 75px 175px;
+  flex-wrap: wrap;
+  font-weight: 500;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+div,
+button,
+h1,
+h2 {
+  font-family: "Bebas Neue", cursive;
+}
+p,
+li,
+ul,
+pre,
+a,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+button {
+  border-style: none;
+  color: #ffffff;
+  background: #6c9bcf;
+  padding: 15px;
+  margin: 15px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+button:active {
+  padding: 19px;
+  margin: 19px;
+}
+
+section {
+  padding-top: 200px;
+}
+section:first-child {
+  padding-top: 20px;
+}
+.coin-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 620px) {
+  button {
+    border-style: none;
+    color: #ffffff;
+    background: #6c9bcf;
+    padding: 20px;
+    margin: 15px 10px;
+    border-radius: 10px;
+  }
+
+  div,
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  }
+  p,
+  li,
+  ul,
+  pre,
+  a {
+  }
+  .main {
+    padding: 30px 30px;
+  }
+}
