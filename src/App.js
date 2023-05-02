@@ -8,17 +8,19 @@ import React, { useState, useEffect } from "react";
 export default function App() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch1] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const url =
+    "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=200&page=1&sparkline=false";
 
   useEffect(() => {
+    setLoading(true);
     axios
-      .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=200&page=1&sparkline=false"
-      )
-      .then((res) => {
-        setCoins(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => console.log(error));
+      .get(url)
+      .then((res) => setCoins(res.data))
+      .then((response) => console.log(response))
+      .finally(() => setLoading(false))
+      .catch((error) => setError(error));
   }, []);
 
   const setSearch = (search) => {
@@ -33,6 +35,8 @@ export default function App() {
     <div className="main">
       <Home />
       <Coinform setSearch={setSearch} />
+      {loading && <h1 className="loading">Cargando...</h1>}{" "}
+      {error && <h1 className="error">Error : {error}</h1>}
       <div className="coin-container">
         {filteredCoins.map((coin) => {
           return (
